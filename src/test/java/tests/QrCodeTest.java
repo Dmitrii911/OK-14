@@ -1,6 +1,7 @@
 package tests;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.LoginPage;
 import pages.QrCodePage;
@@ -19,6 +20,7 @@ public class QrCodeTest extends TestBase {
     }
 
     @Test
+    @Tag("ok")
     public void findQrCodeImage() {
         loginPage.clickQrCode();
         qrCodePage = new QrCodePage();

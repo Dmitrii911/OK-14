@@ -1,6 +1,7 @@
 package tests;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.AnonymRecoveryPage;
 import pages.LoginPage;
@@ -21,6 +22,7 @@ public class AnonymRecoveryByPhoneTest extends TestBase {
         loginPage = new LoginPage();
     }
     @Test
+    @Tag("ok")
     public void setAnonymRecoveryTest(){
         //Попытка входа с некорректными данными
         loginPage.login("incorrectUser", "incorrectPassword");

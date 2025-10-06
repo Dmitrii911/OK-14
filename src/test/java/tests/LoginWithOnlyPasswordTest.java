@@ -2,6 +2,7 @@ package tests;
 
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.LoginPage;
 
@@ -23,6 +24,7 @@ public class LoginWithOnlyPasswordTest extends TestBase {
 
     }
     @Test
+    @Tag("ok")
     public void loginWithPasswordTest(){
         //Попытка входа с паролем
         loginPage.loginWithPassword("password");
