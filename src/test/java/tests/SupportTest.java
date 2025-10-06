@@ -1,6 +1,7 @@
 package tests;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.LoginPage;
 import pages.RestorePage;
@@ -22,6 +23,7 @@ public class SupportTest extends TestBase
         loginPage = new LoginPage();
     }
     @Test
+    @Tag("ok")
     public void goToSupport() {
         loginPage.clickRestoreButton();
         restorePage = new RestorePage();

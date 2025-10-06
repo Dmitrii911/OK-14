@@ -57,10 +57,10 @@ tasks.withType(Test) {
 }
 
 
-//task property_test(type: Test) {
-//    useJUnitPlatform{
-//        includeTags("property")
-//    }
-//}
+task ok_test(type: Test) {
+    useJUnitPlatform{
+        includeTags("ok")
+    }
+}
 
 
