@@ -1,6 +1,7 @@
 package tests;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.AnonymRecoveryPage;
@@ -22,8 +23,8 @@ public class AnonymRecoveryByEmailTest extends TestBase {
     }
     @Test
     @Tag("ok")
+    @DisplayName("Попытка входа с некорректными данными почты")
     public void setAnonymRecoveryTest(){
-        //Попытка входа с некорректными данными
         loginPage.login("incorrectUser", "incorrectPassword");
 
         for (int i = 0; i < 2; i++){
