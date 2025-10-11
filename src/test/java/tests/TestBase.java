@@ -25,6 +25,8 @@ public class TestBase {
         // Настройки русского языка для Chrome
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--lang=ru-RU");
+        options.addArguments("intl.accept_languages=ru,RU");
+
         Configuration.browserCapabilities = options;
 
 
