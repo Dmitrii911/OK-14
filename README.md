@@ -65,8 +65,22 @@ gradle clean test
 
 > `${BROWSER}` - наименование браузера (_по умолчанию - <code>chrome</code>_).
 >
-> `${BROWSER_VERSION}` - версия браузера (_по умолчанию - <code>100.0</code>_).
+> `${BROWSER_VERSION}` - версия браузера (_по умолчанию - <code>128.0</code>_).
 >
 > `${BROWSER_SIZE}` - размер окна браузера (_по умолчанию - <code>1920x1080</code>_).
 >
 > `${REMOTE_URL}` - адрес удаленного сервера, на котором будут запускаться тесты.
+> 
+> <a id="jenkins"></a>
+## <img src="images/logo/Jenkins.svg" width="25" height="25"/></a> Запуск тестов в Jenkins
+
+<a target="_blank" href="https://jenkins.autotests.cloud/job/001-dv_oleynik-ok/">Сборка в Jenkins</a>
+<p align="center">
+
+<a href="https://jenkins.autotests.cloud/job/001-dv_oleynik-ok/"><img src="images/screenshots/JenkMain.png" alt="Jenkins"/></a>
+
+> Сборка с параметрами позволяет перед запуском изменить параметры для сборки (путем выбора из списка или прямым указанием значения).
+> Клик по иконкам Allure TestOps и Allure Report позволяет перейти на просмотр страниц с тестовой документацией и отчетов.
+
+<a href="https://jenkins.autotests.cloud/job/001-dv_oleynik-ok/"><img src="images/screenshots/JenkUISborka.png" alt="Jenkins"/></a>
+</p>
