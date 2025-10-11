@@ -26,7 +26,9 @@ public class TestBase {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--lang=ru-RU");
         options.addArguments("intl.accept_languages=ru,RU");
-
+        options.addArguments("--disable-blink-features=AutomationControlled");
+        options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
+        options.setExperimentalOption("useAutomationExtension", false);
         Configuration.browserCapabilities = options;
 
 
