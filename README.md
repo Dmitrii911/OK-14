@@ -33,3 +33,40 @@
 | Jira                                                                                                                          | Allure                                                                                                                     | Allure TestOps                                                                                                          |
 |:------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
 | <a href="https://www.atlassian.com/ru/software/jira"><img src="images/logo/Jira.svg" width="50" height="50"  alt="Jira"/></a> | <a href="https://github.com/allure-framework"><img src="images/logo/Allure.svg" width="50" height="50"  alt="Allure"/></a> | <a href="https://qameta.io/"><img src="images/logo/Allure_TO.svg" width="50" height="50"  alt="Allure TestOps"/></a>    |
+
+<a id="cases"></a>
+## :ballot_box_with_check: Реализованные проверки
+
+- :small_blue_diamond: Проверка входа по QR на главной странице
+- :small_blue_diamond: Проверка входа через "Не получается войти"
+- :small_blue_diamond: Проверка входа через Yandex
+- :small_blue_diamond: Попытка входа с некорректными данными почты
+- :small_blue_diamond: Попытка входа с некорректными данными телефона
+- :small_blue_diamond: Тест входа только по паролю
+- :small_blue_diamond: Проверка Support
+
+<a id="console"></a>
+## :computer: Запуск тестов из терминала
+### Локальный запуск тестов
+
+```
+gradle clean test 
+```
+
+### Удаленный запуск тестов
+
+```
+gradle clean test 
+"-Dbrowser=${BROWSER}" 
+"-DbrowserVersion=${BROWSER_VERSION}" 
+"-DbrowserSize=${BROWSER_SIZE}" 
+"-DremoteUrl=${REMOTE_URL}"
+```
+
+> `${BROWSER}` - наименование браузера (_по умолчанию - <code>chrome</code>_).
+>
+> `${BROWSER_VERSION}` - версия браузера (_по умолчанию - <code>100.0</code>_).
+>
+> `${BROWSER_SIZE}` - размер окна браузера (_по умолчанию - <code>1920x1080</code>_).
+>
+> `${REMOTE_URL}` - адрес удаленного сервера, на котором будут запускаться тесты.
