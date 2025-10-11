@@ -9,7 +9,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
-
+import io.github.bonigarcia.wdm.WebDriverManager;
 import java.util.Map;
 
 public class TestBase {
@@ -29,6 +29,9 @@ public class TestBase {
         options.addArguments("--disable-blink-features=AutomationControlled");
         options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
         options.setExperimentalOption("useAutomationExtension", false);
+        // Установка подходящего ChromeDriver для Chrome 128
+        WebDriverManager.chromedriver().driverVersion("128").setup();
+
         Configuration.browserCapabilities = options;
 
 
