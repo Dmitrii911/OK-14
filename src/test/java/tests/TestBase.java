@@ -22,18 +22,8 @@ public class TestBase {
         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
         Configuration.pageLoadStrategy = "eager"; // ускоренная загрузка страницы
 
-        // Настройки русского языка для Chrome
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--lang=ru-RU");
-        options.addArguments("intl.accept_languages=ru,RU");
-        options.addArguments("--disable-blink-features=AutomationControlled");
-        options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
-        options.setExperimentalOption("useAutomationExtension", false);
-        // Установка подходящего ChromeDriver для Chrome 128
-        WebDriverManager.chromedriver().driverVersion("128").setup();
-
-        Configuration.browserCapabilities = options;
-
+        Configuration.browserCapabilities = new ChromeOptions()
+                .addArguments("--lang=ru_RU");
 
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -44,6 +34,7 @@ public class TestBase {
         Configuration.browserCapabilities = capabilities;
 
     }
+
 
     @BeforeEach
     void setUpListener() {
