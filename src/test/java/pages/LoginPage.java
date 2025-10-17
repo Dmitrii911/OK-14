@@ -15,7 +15,7 @@ public class LoginPage extends BasePage {
     private SelenideElement registrationButton = $x("//div [@class='external-oauth-login-footer']/a[@data-l='t,register']");
     private SelenideElement qrCodeButton = $(".qr-code-button");
     private SelenideElement restoreButton = $(".lp");
-    private SelenideElement inputSearch = $(".label__mofy2 label-input__on39s");
+    private SelenideElement inputSearch = $(".search-wrapper__4nym2");
 
     //Локаторы для кнопок соцсетей
     private SelenideElement vkButton = $("[data-l = 't,vkc']");
@@ -26,7 +26,7 @@ public class LoginPage extends BasePage {
     private SelenideElement errorMessage = $(".input-e.login_error");
 
     // Локатор для восстановления пароля
-    private SelenideElement goToRecoveryButton = $("[value='st.go_to_recovery']");
+    private SelenideElement goToRecoveryButton = $("[tsid=\"restore\"]");
 
     {
         verifyPageElements();
