@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Selenide.$x;
 public class LoginPage extends BasePage {
     private SelenideElement usernameField = $("[name = 'st.email']");
     private SelenideElement passwordField = $("[name = 'st.password']");
-    private SelenideElement loginButton = $("[data-l = 't,sign_in']");
+    private SelenideElement loginButton = $("[tsid=\"login-block21_input_9ad800\"]");
     private SelenideElement forgotPasswordLink = $("[data-l = 't,restore']");
     private SelenideElement registrationButton = $x("//div [@class='external-oauth-login-footer']/a[@data-l='t,register']");
     private SelenideElement qrCodeButton = $(".qr-code-button");
