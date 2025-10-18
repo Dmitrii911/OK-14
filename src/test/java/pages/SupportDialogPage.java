@@ -8,31 +8,23 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$x;
 
 public class SupportDialogPage extends BasePage {
-    private SelenideElement supportChat = $(".chat__n9ga2");
-    private SelenideElement buttonClose = $(".button__tndfc.button-icon__tndfc");
-    private SelenideElement buttonYes = $x("//span[text()='Да']");
-
+    private SelenideElement supportChat = $(".portlet_h");
+    private SelenideElement buttonCancel = $("[tsid='feedback-form_button_953b97']");
 
     {
         verifyPageElements();
     }
 
-    @Step("Проверяем видимость диалогового окна")
+    @Step("Проверяем видимость окна")
     private void verifyPageElements() {
         supportChat.shouldBe(visible);
-        buttonClose.shouldBe(visible);
-
+        buttonCancel.shouldBe(visible);
     }
+
     @Step("Проверяем видимость кнопки закрытия и кликаем на нее")
-    public void clickbuttonClose() {
-        buttonClose.shouldBe(visible).click();
-    }
-
-
-    @Step("ппроверяем наличие кнопки ДА и кликаем на нее")
-    public void clickButtonYes() {
-        buttonYes.shouldBe(visible).click();
-
+    public void clickbuttonCancel() {
+        buttonCancel.shouldBe(visible).click();
     }
 }
+
 
