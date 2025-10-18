@@ -36,11 +36,11 @@ loginPage.goToRecovery();
 anonymRecoveryPage = new AnonymRecoveryPage();
 anonymRecoveryPage.goToRecoveryByPhone();
 startPhoneLinkPage = new StartPhoneLinkPage();
-String countryCode = startPhoneLinkPage.selectCountryByName("Россия");
+String countryCode = startPhoneLinkPage.selectCountryByName("Russia");
 assertEquals("+7", countryCode, "Код страны не совпадает с ожидаемым");
 startPhoneLinkPage.recieveCode();
 startPhoneLinkPage.recieveMessage();
-String expectedErrorMessage = "Неправильный номер телефона.";
+String expectedErrorMessage = "Incorrect phone number.";
 String actualErrorMessage = startPhoneLinkPage.recieveMessage();
 assertEquals(expectedErrorMessage, actualErrorMessage, "текст об ошибке не совпадает");
 
