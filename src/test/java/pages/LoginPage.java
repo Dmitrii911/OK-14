@@ -85,7 +85,7 @@ public class LoginPage extends BasePage {
     @Step("Входим на сайт с паролем")
     public void loginWithPassword(String password) {
         passwordField.shouldBe(visible).setValue(password);
-//        loginButton.shouldBe(visible).click();
+        loginButton.shouldBe(visible).click();
     }
 
     @Step("Переходим наа страницу восстановления пароля")
