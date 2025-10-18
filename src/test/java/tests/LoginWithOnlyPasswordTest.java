@@ -33,7 +33,7 @@ public class LoginWithOnlyPasswordTest extends TestBase {
         //проверка наличия сообщения об ошибке
         assertTrue(loginPage.isErrorMessageVisible(), "Сообщение об ошибке входа не отображается");
         // Проверка текста сообщения об ошибке
-        String expectedErrorMessage = "Введите логин";
+        String expectedErrorMessage = "Enter your username";
         String actualErrorMessage = loginPage.getErrorMessageText();
         assertEquals(expectedErrorMessage, actualErrorMessage, "текст об ошибке не совпадает");
 
