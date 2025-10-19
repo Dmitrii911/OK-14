@@ -103,7 +103,7 @@ gradle clean test
 </p>
 
 <a id="allure-testops"></a>
-## <img src="images/logo/Allure_TO.svg" width="25" height="25"/></a> Интеграция с [Allure TestOps](https://allure.autotests.cloud/project/1919/dashboards)
+## <img src="images/logo/Allure_TO.svg" width="25" height="25"/></a> Интеграция с [Allure TestOps](https://allure.autotests.cloud/project/4940/dashboards)
 
 >Интеграция Allure TestOps с Jenkins позволяет запускать несколько выборочных тестов и следить за их выполнением в онлайн формате.
 
@@ -122,7 +122,7 @@ gradle clean test
 </p>
 
 <a id="jira"></a>
-## <img src="images/logo/Jira.svg" width="25" height="25"/></a> Интеграция с [Jira](https://jira.autotests.cloud/browse/HOMEWORK-552)
+## <img src="images/logo/Jira.svg" width="25" height="25"/></a> Интеграция с [Jira](https://jira.autotests.cloud/browse/HOMEWORK-1507)
 
 ### Связка Jira и Allure TestOps
 <p align="center">
