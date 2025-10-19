@@ -138,9 +138,9 @@ gradle clean test
 </p>
 
 <a id="video"></a>
-## <img src="images/logo/Selenoid.svg" width="25" height="25"/></a> Пример прогона теста в Selenoid
+## <img src="images/logo/Selenoid.svg" width="25" height="25"/></a> Пример прогона тестов в Selenoid
 
-> Видео к прохождению теста "Добавление игры в корзину".
+> Видео к прохождению тестов.
 <p align="center">
   <img title="Selenoid Video" src="images/video/addToCartVideo.gif">
 </p>
