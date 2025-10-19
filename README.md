@@ -38,12 +38,12 @@
 ## :ballot_box_with_check: Реализованные проверки
 
 - :small_blue_diamond: Проверка входа по QR на главной странице
-- :small_blue_diamond: Проверка входа через "Не получается войти"
-- :small_blue_diamond: Проверка входа через Yandex
+- :small_blue_diamond: Проверка Support 
+- :small_blue_diamond: Проверка входа с некорректным логином и паролем
 - :small_blue_diamond: Попытка входа с некорректными данными почты
 - :small_blue_diamond: Попытка входа с некорректными данными телефона
+- :small_blue_diamond: Тест входа только по имени пользователя 
 - :small_blue_diamond: Тест входа только по паролю
-- :small_blue_diamond: Проверка Support
 
 <a id="console"></a>
 ## :computer: Запуск тестов из терминала
@@ -83,4 +83,21 @@ gradle clean test
 > Клик по иконкам Allure TestOps и Allure Report позволяет перейти на просмотр страниц с тестовой документацией и отчетов.
 
 <a href="https://jenkins.autotests.cloud/job/001-dv_oleynik-ok/"><img src="images/screenshots/JenkUISborka.png" alt="Jenkins"/></a>
+</p>
+
+<a id="allure"></a>
+## <img src="images/logo/Allure.svg" width="25" height="25"/></a> Отчеты в [Allure Report](https://jenkins.autotests.cloud/job/001-dv_oleynik-ok/11/allure/)
+
+### Основное окно
+
+<p align="center">
+<img title="Allure Overview Dashboard" src="images/screenshots/AllureUIMain.png">
+</p>
+
+### Тесты
+
+>К каждой проверке прилагается скриншот страницы последнего действия в тесте, логи и видео.
+
+<p align="center">
+<img title="Allure Tests" src="images/screenshots/AllureUITests.png">
 </p>
