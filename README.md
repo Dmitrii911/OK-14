@@ -101,3 +101,46 @@ gradle clean test
 <p align="center">
 <img title="Allure Tests" src="images/screenshots/AllureUITests.png">
 </p>
+
+<a id="allure-testops"></a>
+## <img src="images/logo/Allure_TO.svg" width="25" height="25"/></a> Интеграция с [Allure TestOps](https://allure.autotests.cloud/project/1919/dashboards)
+
+>Интеграция Allure TestOps с Jenkins позволяет запускать несколько выборочных тестов и следить за их выполнением в онлайн формате.
+
+<p align="center">
+<img title="Allure TestOps" src="images/screenshots/3casesJobUI.png">
+</p>
+
+<p align="center">
+<img title="Allure TestOps" src="images/screenshots/TO_InProgresUI.png">
+</p>
+
+>Кейсы находятся в актуальном состоянии, поскольку сценарии выгружаются из кода.
+
+<p align="center">
+<img title="Allure TestOps" src="images/screenshots/casesUITO.png">
+</p>
+
+<a id="jira"></a>
+## <img src="images/logo/Jira.svg" width="25" height="25"/></a> Интеграция с [Jira](https://jira.autotests.cloud/browse/HOMEWORK-552)
+
+### Связка Jira и Allure TestOps
+<p align="center">
+<img title="Jira" src="images/screenshots/JiraUI.png">
+</p>
+
+
+<a id="telegram"></a>
+## <img src="images/logo/Telegram.svg" width="25" height="25"/></a> Уведомления в Telegram с использованием бота
+
+<p >
+<img title="telegram bot" src="images/screenshots/WebTelegramRes.png">
+</p>
+
+<a id="video"></a>
+## <img src="images/logo/Selenoid.svg" width="25" height="25"/></a> Пример прогона теста в Selenoid
+
+> Видео к прохождению теста "Добавление игры в корзину".
+<p align="center">
+  <img title="Selenoid Video" src="images/video/addToCartVideo.gif">
+</p>
