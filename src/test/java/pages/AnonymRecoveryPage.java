@@ -15,23 +15,26 @@ public class AnonymRecoveryPage extends BasePage {
     {
         verifyPageElements();
     }
+
     @Step("Проверяем видимость элементов на странице восстановления пароля")
-    private void verifyPageElements(){
+    private void verifyPageElements() {
         recoveryByPhoneButton.shouldBe(visible);
         recoveryByEmailButton.shouldBe(visible);
         recoveryBySupportButton.shouldBe(visible);
     }
+
     @Step("Нажимаем на кнопку восстановления через телефон")
-    public void goToRecoveryByPhone(){
+    public void goToRecoveryByPhone() {
         recoveryByPhoneButton.shouldBe().click();
     }
 
     @Step("Нажимаем на кнопку восстановления через email")
-    public void goToRecoveryByEmail(){
+    public void goToRecoveryByEmail() {
         recoveryByEmailButton.shouldBe().click();
     }
+
     @Step("Переходим в поддержку")
-    public void goToRecoveryBySupport(){
+    public void goToRecoveryBySupport() {
         recoveryBySupportButton.shouldBe().click();
     }
 

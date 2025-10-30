@@ -17,17 +17,18 @@ public class AnonymRecoveryByEmailTest extends TestBase {
     private static StartEmailLinkPage startEmailLinkPage;
 
     @BeforeEach
-    public void prepare(){
+    public void prepare() {
         open(baseUrl);
         loginPage = new LoginPage();
     }
+
     @Test
     @Tag("ok")
     @DisplayName("Попытка входа с некорректными данными почты")
-    public void setAnonymRecoveryTest(){
+    public void setAnonymRecoveryTest() {
         loginPage.login("incorrectUser", "incorrectPassword");
 
-        for (int i = 0; i < 2; i++){
+        for (int i = 0; i < 2; i++) {
             loginPage.loginWithPassword("1");
             loginPage.clickLogin();
         }

@@ -99,17 +99,17 @@ public class LoginPage extends BasePage {
     }
 
     //Методы для перехода для регистрации через страницы соцсети
-    @Step("Вход черещ ВК")
+    @Step("Вход через ВК")
     public void openwithVK() {
         vkButton.shouldBe(visible).click();
     }
 
-    @Step("Вход черещ google")
+    @Step("Вход через google")
     public void openwithGoogle() {
         yandexButton.shouldBe(visible).click();
     }
 
-    @Step("Вход черещ mail.ru")
+    @Step("Вход через mail.ru")
     public void openwithMailRu() {
         mailRuButton.shouldBe(visible).click();
     }
@@ -123,9 +123,4 @@ public class LoginPage extends BasePage {
     public void clickRestoreButton() {
         restoreButton.shouldBe(visible).click();
     }
-
-//    @Step("Вводим значение в поисковик")
-//    public void setValueToInput(value) {
-//        inputSearch.shouldBe(visible).setValue(value);
-//    }
 }

@@ -8,11 +8,13 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class QrCodePage extends BasePage {
     private final SelenideElement qrCodeImage = $(".qr_code_image_wrapper");
+
     {
         verifyPageElements();
     }
+
     @Step("Проверяем видимость QR-кода на странице")
-    public void verifyPageElements(){
+    public void verifyPageElements() {
         qrCodeImage.shouldBe(visible);
 
 

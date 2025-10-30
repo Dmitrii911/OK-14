@@ -18,31 +18,32 @@ public class AnonymRecoveryByPhoneTest extends TestBase {
     private static StartPhoneLinkPage startPhoneLinkPage;
 
     @BeforeEach
-    public void prepare(){
+    public void prepare() {
         open(baseUrl);
         loginPage = new LoginPage();
     }
+
     @Test
     @Tag("ok")
     @DisplayName("Попытка входа с некорректными данными телефона")
-    public void setAnonymRecoveryTest(){
+    public void setAnonymRecoveryTest() {
         loginPage.login("incorrectUser", "incorrectPassword");
 
-        for (int i = 0; i < 2; i++){
+        for (int i = 0; i < 2; i++) {
             loginPage.loginWithPassword("1");
             loginPage.clickLogin();
-    }
-loginPage.goToRecovery();
-anonymRecoveryPage = new AnonymRecoveryPage();
-anonymRecoveryPage.goToRecoveryByPhone();
-startPhoneLinkPage = new StartPhoneLinkPage();
-String countryCode = startPhoneLinkPage.selectCountryByName("Russia");
-assertEquals("+7", countryCode, "Код страны не совпадает с ожидаемым");
-startPhoneLinkPage.recieveCode();
-startPhoneLinkPage.recieveMessage();
-String expectedErrorMessage = "Incorrect phone number.";
-String actualErrorMessage = startPhoneLinkPage.recieveMessage();
-assertEquals(expectedErrorMessage, actualErrorMessage, "текст об ошибке не совпадает");
+        }
+        loginPage.goToRecovery();
+        anonymRecoveryPage = new AnonymRecoveryPage();
+        anonymRecoveryPage.goToRecoveryByPhone();
+        startPhoneLinkPage = new StartPhoneLinkPage();
+        String countryCode = startPhoneLinkPage.selectCountryByName("Russia");
+        assertEquals("+7", countryCode, "Код страны не совпадает с ожидаемым");
+        startPhoneLinkPage.recieveCode();
+        startPhoneLinkPage.recieveMessage();
+        String expectedErrorMessage = "Incorrect phone number.";
+        String actualErrorMessage = startPhoneLinkPage.recieveMessage();
+        assertEquals(expectedErrorMessage, actualErrorMessage, "текст об ошибке не совпадает");
 
     }
 }

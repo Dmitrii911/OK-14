@@ -16,7 +16,6 @@ public class SupportTest extends TestBase {
     private static RestorePage restorePage;
     private static SupportDialogPage supportDialogPage;
 
-
     @BeforeEach
     public void prepare() {
         open(baseUrl);

@@ -17,6 +17,7 @@ public class RestorePage extends BasePage {
     private void verifyPageElements() {
         supportLink.shouldBe(visible);
     }
+
     @Step("нажимаем на ссылку службы поддержки")
     public void clickSupport() {
         supportLink.shouldBe(visible).click();

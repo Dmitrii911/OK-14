@@ -18,21 +18,16 @@ public class LoginWithOnlyPasswordTest extends TestBase {
     @BeforeEach
     public void prepare(){
         open(baseUrl);
-        //Принятие куки и политики
         loginPage = new LoginPage();
-//        loginPage.acceptCookie();
-//        loginPage.acceptPrivacyButton();
+
 
     }
     @Test
     @Tag("ok")
     @DisplayName("Тест входа только по паролю")
     public void loginWithPasswordTest(){
-        //Попытка входа с паролем
         loginPage.loginWithPassword("password");
-        //проверка наличия сообщения об ошибке
         assertTrue(loginPage.isErrorMessageVisible(), "Сообщение об ошибке входа не отображается");
-        // Проверка текста сообщения об ошибке
         String expectedErrorMessage = "Enter your username";
         String actualErrorMessage = loginPage.getErrorMessageText();
         assertEquals(expectedErrorMessage, actualErrorMessage, "текст об ошибке не совпадает");
