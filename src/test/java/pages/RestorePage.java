@@ -6,7 +6,7 @@ import io.qameta.allure.Step;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 
-public class RestorePage extends BasePage {
+public class RestorePage {
     private SelenideElement supportLink = $(".support-link_item-icon");
 
     {

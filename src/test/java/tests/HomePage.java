@@ -1,7 +1,6 @@
 package tests;
 
 import com.codeborne.selenide.Configuration;
-import io.qameta.allure.Step;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -10,15 +9,16 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
-public class HomePage  {
+public class HomePage extends TestBase {
     @Tag("ок")
-    @Tag("property")
     @DisplayName("Проверка входа по QR")
         @Test
         void homeQr () {
 
-            open("https://ok.ru/");
+            open("/");
 
+            $(".tico").click();
+            $(".sel-lang_list").$(byText("Русский")).click();
             $(".filter").$(byText("QR-код")).click();
             $(".qr_code_info_digest_info").
                     shouldHave(text("Ваш код авторизации: "));

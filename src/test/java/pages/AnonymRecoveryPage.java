@@ -6,7 +6,7 @@ import io.qameta.allure.Step;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 
-public class AnonymRecoveryPage extends BasePage {
+public class AnonymRecoveryPage {
     private SelenideElement recoveryByPhoneButton = $("[data-l='t,phone']");
     private SelenideElement recoveryByEmailButton = $("[data-l='t,email']");
     private SelenideElement recoveryBySupportButton = $("[data-l='t,support']");

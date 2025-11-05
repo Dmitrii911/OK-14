@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$x;
 
-public class LoginPage extends BasePage {
+public class LoginPage {
     private SelenideElement usernameField = $(".field_email");
     private SelenideElement passwordField = $("[name = 'st.password']");
     private SelenideElement loginButton = $("[tsid=\"login-block21_input_9ad800\"]");

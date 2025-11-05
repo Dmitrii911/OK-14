@@ -6,7 +6,7 @@ import io.qameta.allure.Step;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 
-public class StartPhoneLinkPage extends BasePage {
+public class StartPhoneLinkPage {
     private SelenideElement fieldPhone = $("#field_phone");
     private SelenideElement fieldLocal = $(".isl_w");
     private SelenideElement recieveCodeButton = $("[data-l='t,submit']");

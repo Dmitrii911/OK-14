@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$x;
 
-public class SupportDialogPage extends BasePage {
+public class SupportDialogPage {
     private SelenideElement supportChat = $(".portlet_h");
     private SelenideElement buttonCancel = $("[tsid='feedback-form_button_953b97']");
 
